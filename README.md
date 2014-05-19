@@ -23,3 +23,5 @@ NOTE:
 2.project profile: JDK6 Maven Spring MySql5
 
 3.ssb.sql contains sql schema and initial data.
+
+4.each project except ssb have unit test for demonstration, but unit test for blockingqueue can only be running as Java App since I don't why JUnit can not start multi-thread.
