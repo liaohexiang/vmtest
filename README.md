@@ -24,4 +24,4 @@ NOTE:
 
 3.ssb.sql contains sql schema and initial data.
 
-4.each project except ssb have unit test for demonstration, but unit test for blockingqueue can only be running as Java App since I don't why JUnit can not start multi-thread.
+4.each project except ssb has unit test for demonstration, but unit test for blockingqueue can only be running as Java App since I don't know why JUnit can not start multi-thread.
