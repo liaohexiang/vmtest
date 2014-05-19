@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class BlockingQueue<T> {
+public class ReentantBlockingQueue<T> {
 
 	private final LinkedList<T> queue = new LinkedList<T>();
 	private final int maxLength;
@@ -15,11 +15,11 @@ public class BlockingQueue<T> {
 	private final ReentrantLock putLock = new ReentrantLock();
 	private final Condition notFull = putLock.newCondition();
 
-	public BlockingQueue() {
+	public ReentantBlockingQueue() {
 		this(Integer.MAX_VALUE);
 	}
 
-	public BlockingQueue(int maxLen) {
+	public ReentantBlockingQueue(int maxLen) {
 		this.maxLength = maxLen;
 	}
 
@@ -42,7 +42,6 @@ public class BlockingQueue<T> {
 	}
 
 	private void signalNotEmpty() {
-		final ReentrantLock takeLock = this.takeLock;
 		takeLock.lock();
 		try {
 			notEmpty.signal();
@@ -72,7 +71,6 @@ public class BlockingQueue<T> {
 	}
 
 	private void signalNotFull() {
-		final ReentrantLock putLock = this.putLock;
 		putLock.lock();
 		try {
 			notFull.signal();
