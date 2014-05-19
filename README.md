@@ -20,7 +20,7 @@ Consider that we are a service provider to provide customers different services.
 NOTE:
 1.the vmtest project is a parent project which consist of 4 module projects which correspond to above 4 tasks
 
-2.project profile:IDE:Spring SST, Tech tack JDK6 Maven Spring Hibernate MySql5
+2.project profile:IDE:Spring SST, Tech Stack: JDK6 Maven Spring Hibernate MySql5
 
 3.ssb.sql contains sql schema and initial data.
 
