@@ -15,7 +15,6 @@ public class ArrayHolder<T>{
 	
 	private SORTTYPE sortType;
 	
-	private String name;
 	public ArrayHolder(List<T> array, SORTTYPE sort,Comparator<T> comparator ){
 		
 		this.array = array;
