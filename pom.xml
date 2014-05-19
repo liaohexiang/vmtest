@@ -19,5 +19,8 @@
   </dependencies>
   <modules>
   	<module>merge</module>
+  	<module>Painting</module>
+  	<module>ssb</module>
+  	<module>blockingqueue</module>
   </modules>
 </project>

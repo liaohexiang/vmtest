@@ -1,15 +1,7 @@
 package com.vm.tony.ssb.dao;
 
-import java.util.Random;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.PersistenceContext;
 import javax.sql.DataSource;
-
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcDaoSupport;
-import org.springframework.stereotype.Repository;
 
 public class UserServiceDao {
 
